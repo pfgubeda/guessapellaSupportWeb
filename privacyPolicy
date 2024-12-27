@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessapella Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f7f7f7;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+            text-align: left;
+        }
+        .language-toggle {
+            cursor: pointer;
+            color: #007bff;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleLanguage(lang) {
+            document.getElementById('english').style.display = lang === 'en' ? 'block' : 'none';
+            document.getElementById('spanish').style.display = lang === 'es' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body onload="toggleLanguage('en')">
+    <div class="container">
+        <!-- English Content -->
+        <div id="english">
+            <h1>Guessapella Privacy Policy</h1>
+            <p>Your privacy is important to us. This document explains how <strong>Guessapella</strong> handles your data.</p>
+            <hr>
+            <h2>Data Usage</h2>
+            <ul>
+                <li><strong>Apple Music Integration:</strong> The app uses Apple Music to play song snippets. Guessapella requests permission to access your Apple Music library solely for this purpose.</li>
+                <li><strong>Local Use Only:</strong> All app interactions occur locally on your device. No personal data is shared or sent outside of the app.</li>
+                <li><strong>No Data Collection:</strong> Guessapella does not collect, store, or share any personal information or gameplay data.</li>
+            </ul>
+            <hr>
+            <h2>Changes to the Policy</h2>
+            <p>This privacy policy may be updated. Any changes will be reflected on this page.</p>
+            <hr>
+            <h2>Contact Us</h2>
+            <p>If you have any questions regarding this policy, please reach out to us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:guessapella@gmail.com">guessapella@gmail.com</a></li>
+                 <li><strong>Contact page:</strong> <a href="https://pfgubeda.github.io/guessapellaSupportWeb/" target="_blank"> Guessapella support </a></li>
+            </ul>
+        </div>
+
+        <!-- Spanish Content -->
+        <div id="spanish" style="display: none;">
+            <h1>Política de Privacidad de Guessapella</h1>
+            <p>Tu privacidad es importante para nosotros. Este documento explica cómo <strong>Guessapella</strong> maneja tus datos.</p>
+            <hr>
+            <h2>Uso de Datos</h2>
+            <ul>
+                <li><strong>Integración con Apple Music:</strong> La app utiliza Apple Music para reproducir fragmentos de canciones. Guessapella solicita permiso para acceder a tu biblioteca de Apple Music únicamente con este propósito.</li>
+                <li><strong>Uso Local:</strong> Todas las interacciones de la app ocurren localmente en tu dispositivo. No se comparte ni envía ningún dato personal fuera de la app.</li>
+                <li><strong>No Recopilación de Datos:</strong> Guessapella no recopila, almacena ni comparte información personal o datos del juego.</li>
+            </ul>
+            <hr>
+            <h2>Cambios en la Política</h2>
+            <p>Esta política de privacidad puede actualizarse. Cualquier cambio se reflejará en esta página.</p>
+            <hr>
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna pregunta sobre esta política, contáctanos:</p>
+            <ul>
+                <li><strong>Correo Electrónico:</strong> <a href="mailto:guessapella@gmail.com">guessapella@gmail.com</a></li>
+                <li><strong>Contact page:</strong> <a href="https://pfgubeda.github.io/guessapellaSupportWeb/" target="_blank"> Guessapella support </a></li>
+            </ul>
+        </div>
+
+        <!-- Language Toggle -->
+        <div class="language-toggle">
+            <span onclick="toggleLanguage('en')">English</span> | <span onclick="toggleLanguage('es')">Español</span>
+        </div>
+
+        <div class="footer">
+            <p>Thank you for trusting Guessapella. Enjoy the music guessing experience!</p>
+        </div>
+    </div>
+</body>
+</html>

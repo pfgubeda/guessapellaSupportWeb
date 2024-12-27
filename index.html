@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessapella Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .language-toggle {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+    <script>
+        function toggleLanguage(lang) {
+            document.getElementById('english').style.display = lang === 'en' ? 'block' : 'none';
+            document.getElementById('spanish').style.display = lang === 'es' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body onload="toggleLanguage('en')">
+    <div class="container">
+        <!-- English Content -->
+        <div id="english">
+            <h1>Guessapella Support</h1>
+            <p>Welcome to the support page for <strong>Guessapella</strong>, the fun and interactive song-guessing game! Here, you’ll find answers to frequently asked questions, details about the app, and ways to reach out for support.</p>
+            <hr>
+            <h2>What is Guessapella?</h2>
+            <p><strong>Guessapella</strong> is a music game that challenges your knowledge of songs. Using the power of Apple Music, the app plays snippets of songs, and your task is to guess the correct title or artist. Compete with friends, improve your music recognition skills, and have fun!</p>
+            <hr>
+            <h2>Privacy and Data Usage</h2>
+            <p>We value your privacy and are committed to keeping your data secure. Here’s how <strong>Guessapella</strong> handles your information:</p>
+            <ul>
+                <li><strong>Apple Music Integration:</strong> The app uses Apple Music to play song snippets. To provide this feature, Guessapella requests permission to access your Apple Music library.</li>
+                <li><strong>Local Use Only:</strong> All interactions with Apple Music occur locally on your device. No data is stored, sent, or shared outside the app.</li>
+                <li><strong>No Remote Storage:</strong> Guessapella does not save or upload your personal information, music preferences, or gameplay data to any server.</li>
+            </ul>
+            <p>For more details, see our <a href="#">Privacy Policy</a>.</p>
+            <hr>
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feedback, or need assistance, feel free to reach out:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:support@guessapella.com">support@guessapella.com</a></li>
+                <li><strong>Website:</strong> <a href="#">www.guessapella.com</a></li>
+            </ul>
+        </div>
+
+        <!-- Spanish Content -->
+        <div id="spanish" style="display: none;">
+            <h1>Soporte de Guessapella</h1>
+            <p>Bienvenido a la página de soporte de <strong>Guessapella</strong>, el divertido e interactivo juego de adivinar canciones. Aquí encontrarás respuestas a preguntas frecuentes, detalles sobre la app y formas de contactarnos.</p>
+            <hr>
+            <h2>¿Qué es Guessapella?</h2>
+            <p><strong>Guessapella</strong> es un juego de música que pone a prueba tu conocimiento de canciones. Usando el poder de Apple Music, la app reproduce fragmentos de canciones, y tu tarea es adivinar el título o el artista correcto. ¡Compite con amigos, mejora tus habilidades de reconocimiento musical y diviértete!</p>
+            <hr>
+            <h2>Privacidad y Uso de Datos</h2>
+            <p>Valoramos tu privacidad y estamos comprometidos a mantener tus datos seguros. Así es como <strong>Guessapella</strong> maneja tu información:</p>
+            <ul>
+                <li><strong>Integración con Apple Music:</strong> La app usa Apple Music para reproducir fragmentos de canciones. Para proporcionar esta función, Guessapella solicita permiso para acceder a tu biblioteca de Apple Music.</li>
+                <li><strong>Uso Local:</strong> Todas las interacciones con Apple Music ocurren localmente en tu dispositivo. No se almacenan, envían ni comparten datos fuera de la app.</li>
+                <li><strong>Sin Almacenamiento Remoto:</strong> Guessapella no guarda ni sube tu información personal, preferencias musicales o datos de juego a ningún servidor.</li>
+            </ul>
+            <p>Para más detalles, consulta nuestra <a href="#">Política de Privacidad</a>.</p>
+            <hr>
+            <h2>Contáctanos</h2>
+            <p>Si tienes preguntas, comentarios o necesitas ayuda, no dudes en contactarnos:</p>
+            <ul>
+                <li><strong>Correo Electrónico:</strong> <a href="mailto:support@guessapella.com">support@guessapella.com</a></li>
+                <li><strong>Sitio Web:</strong> <a href="#">www.guessapella.com</a></li>
+            </ul>
+        </div>
+
+        <!-- Language Toggle -->
+        <div class="language-toggle">
+            <span onclick="toggleLanguage('en')">English</span> | <span onclick="toggleLanguage('es')">Español</span>
+        </div>
+
+        <div class="footer">
+            <p>Thank you for playing Guessapella and for your trust in our app. Let the music guessing begin!</p>
+        </div>
+    </div>
+</body>
+</html>
